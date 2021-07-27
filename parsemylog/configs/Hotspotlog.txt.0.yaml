@@ -1,0 +1,53 @@
+---
+loginsight:
+  1:
+    token: ".*Hotspotfd process is up"
+    Reason: "Hotspot - UP"
+  2:
+    token: ".*Keep alive enable is false, ICMP ping wont be sent"
+    Reason: "Keep Alive Disabled, ICMP Packets are not sent"
+  3:
+    token: ".*shmget failed while setting up hotspot shared memory"
+    Reason: "Failure in setting up hotspot shared memory"
+  4:
+    token: ".*Failed while trying to delete existing hotspot shared memory"
+    Reason: "Existing hotspot shared memory deletion Failure"
+  5:
+    token: ".*shmat failed while setting up hotspot shared memory segment"
+    Reason: "Failure in setting up hotspot shared memory segment"
+  6:
+    token: ".*shmget failed while setting up snooper shared memory"
+    Reason: "Failure in setting up snopper shared memory"
+  7:
+    token: ".*Failed while trying to delete existing snooper shared memory"
+    Reason: "Failure in deleting existing snooper shared memory"
+  8:
+    token: ".*shmat failed while setting up snooper shared memory segment"
+    Reason: "Failure in setting up snopper shared memory segment"
+  9:
+    token: ".*Could not setup shared memory hotspotfd bring up aborted."
+    Reason: "HotSpot Bringup Aborted"
+  10:
+    token: ".*Max. number of clients.*already in list"
+    Reason: "Max Number of clients"
+  11:
+    token: ".*Added case, Client with MAC:.*will be added"
+    Reason: "Client added"
+  12:
+    token: ".*Removal case, Client with MAC:.*will be removed "
+    Reason: "Client deleted"
+  13:
+    token: ".*Create Primary GRE Tunnel with endpoint"
+    Reason: "GRE Primary endpoint Created"
+  14:
+    token: ".*Primary GRE Tunnel Endpoint :.*is not alive Switching to Secondary Endpoint :.*"
+    Reason: "GRE Primary endpoint not alive, switching to secondary"
+  15:
+    token: ".*Max. Secondary EP time:.*exceeded. Switching to Primary EP"
+    Reason: "Switching back to Primary endpoint"
+  16:
+    token: ".*Create Secondary GRE tunnel with endpoint:.*"
+    Reason: "GRE Secondary endpoint Created"
+  17:
+    token: ".*Secondary GRE Tunnel Endpoint:.*is not alive.*"
+    Reason: "GRE Secondary endpoint is not alive"

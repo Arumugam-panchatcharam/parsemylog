@@ -1,0 +1,32 @@
+version: 1
+
+formatters:
+  simple:
+    format: "%(asctime)s - %(levelname)s: %(message)s"
+  extended:
+    format: "%(asctime)s - %(levelname)s - %(filename)s:%(lineno)s - %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple
+
+  file_handler:
+    class: logging.FileHandler
+    level: DEBUG
+    filename: parsemylog.log
+    mode: "w"
+    formatter: extended
+
+loggers:
+  Dev:
+    level: DEBUG
+    handlers: [console, file_handler]
+    propagate: no
+  Prod:
+    level: DEBUG
+    handlers: [file_handler]
+    propagate: no
+root:
+  handlers: [file_handler]

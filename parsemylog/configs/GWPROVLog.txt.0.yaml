@@ -1,0 +1,110 @@
+---
+loginsight:
+    1:
+      token: ".*Reset all web access levels in case of missing Disable.*"
+      Reason: "Reset all web access levels"
+    2:
+      token: ".*tid=.*After applying ErouterMode - syscfg values.*"
+      Reason: "Apply Erouter Mode"
+    3:
+      token: ".*GWP_ApplyErouterMode.* thread  erouter_mode_set_by_user 0.*"
+      Reason: "Erouter mode set by user - 0"
+    4:
+      token: ".*GWP_ApplyErouterMode.*GET  last_erouter_mode 2.*"
+      Reason: "Last Erouter mode - 2"
+    5:
+      token: ".*GWP_ApplyErouterMode.*GET  bridge_mode 0.*"
+      Reason: "Bridge Mode - 0"
+    6:
+      token: ".*GWP_ApplyErouterMode.*GET  oldRouterMode 2.*"
+      Reason: "Old Router Mode - 2"
+    7:
+      token: ".*GWP_ApplyErouterMode.*GET  rg_device_mode 2.*"
+      Reason: "RG device mode - 2"
+    8:
+      token: ".*TLV data file can't be opened.*"
+      Reason: "TLV data file cannot be opened"
+    9:
+      token: ".*syscfg get failed.*"
+      Reason: "SYSCFG Get Failed"
+    10:
+      token: ".*SYSDB_CORRUPTION: bridge_mode =.*, eRouterMode =.*"
+      Reason: "SYSDB Corruption"
+    11:
+      token: ".*SYSDB_CORRUPTION: Switching to Default Router Mode.*"
+      Reason: "SYSDB Corruption - Switching to Default Router Mode"
+    12:
+      token: ".*NEED REBOOT from mode.*to mode.*"
+      Reason: "Change in mode - Gateway rebooted"
+    13:
+      token: ".*erouter mode changed between router modes.*"
+      Reason: "erouter router mode changed between dual<->ipv4<->ipv6"
+    14:
+      token: ".*bridge-status = stopped.*"
+      Reason: "bridge-status = stopped"
+    15:
+      token: ".*bridge-status = started.*"
+      Reason: "bridge-status = started"
+    16:
+      token: ".*lan-status = started.*"
+      Reason: "lan-status = started"
+    17:
+      token: ".*lan-status = stopped.*"
+      Reason: "lan-status = stopped"
+    18:
+      token: ".*wan-status = stopped.*"
+      Reason: "wan-status = stopped"
+    19:
+      token: ".*wan-status = started.*"
+      Reason: "wan-status = started"
+    20:
+      token: ".*bring-lan/pnm-status received.*"
+      Reason: "bring-lan/pnm-status received"
+    21:
+      token: ".* primary_lan_l3net received.*"
+      Reason: "primary_lan_l3net received"
+    22:
+      token: ".*startWebUIProcess: in bridge mode.* "
+      Reason: "WEBUI process started in bridge mode"
+    23:
+      token: ".*startWebUIProcess: in router mode.*"
+      Reason: "WEBUI process started in router mode"
+    24:
+      token: ".*Stopping wan service.*"
+      Reason: "WAN services - stopped"
+    25:
+      token: ".*Restart the Webui.*"
+      Reason: "WEBUI restarted"
+    26:
+      token: ".*Starting wan service.*"
+      Reason: "WAN services - started"
+    27:
+      token: ".*Cannot stat eSafe Config file.*aborting Config file.*"
+      Reason: "Aborting eSafe config file"
+    28:
+      token: ".*CfgFile.*is empty.*"
+      Reason: "CFG File - Empty"
+    29:
+      token: ".*eSafe Config file.*parsed completed, status.*"
+      Reason: "CFG File Parse - completed"
+    30:
+      token: ".*Loading erouter0 network interface driver.*"
+      Reason: "Loading Erouter Interface driver - Success"
+    31:
+      token: ".*Error in open PP driver.*"
+      Reason: "Error in opening PP driver"
+    32:
+      token: ".*Error ioctl.*return with.*"
+      Reason: "IOCTL error PP driver"
+    33:
+      token: ".*Setting lan-start event.*"
+      Reason: "LAN start event"
+    34:
+      token: ".*Setting bridge-start event.*"
+      Reason: "Bridge start event"
+    35:
+      token: ".*dhcp_server-resync.*"
+      Reason: "Setting DHCP server resync"
+    36:
+      token: ".*gw_prov_utopia already running. Returning.*"
+      Reason: "gw_prov_utopia - Running"

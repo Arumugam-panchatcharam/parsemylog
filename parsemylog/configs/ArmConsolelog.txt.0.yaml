@@ -1,0 +1,194 @@
+---
+loginsight:
+    1:
+      token: ".*Add Bridge filter rule to drop multicast FHCD packet.*"
+      Reason: "Drop multicast FHCD packet"
+    2:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : lan_handler called with.*"
+      Reason: "Lan Handler Called"
+    3:
+      token: ".*LAN HANDLER : Triggering DHCP server using LAN status based on RG_MODE:2.*"
+      Reason: "Triggering DHCP server "
+    4:
+      token: ".*LAN HANDLER : Refreshing LAN from handler.*"
+      Reason: "Lan Refresh"
+    5:
+      token: ".*LAN HANDLER : Triggering RDKB_FIREWALL_RESTART.*"
+      Reason: "Firewall Restart"
+    6:
+      token: ".* DSLITE_ENABLED ..........*"
+      Reason: "DSLite Enabled"
+    7:
+      token: ".*NOT DSLITE_ENABLED ..........*"
+      Reason: "DSLite Disabled"
+    8:
+      token: ".*Setting up brlan10 for HOME_LAN_ISOLATION.*"
+      Reason: "Setup BRLAN10 for Home Lan Isolation"
+    9:
+      token: ".*Lan_init_start:.*"
+      Reason: "Lan Init Start"
+    10:
+      token: ".*Lan_init_complete:.*"
+      Reason: "Lan Init Complete"
+    11:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : INST rerurned null, retrying.*"
+      Reason: "Instance returned null and retrying"
+    12:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : L2INST returned null, retrying.*"
+      Reason: "L2Instance returned null and retrying"
+    13:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : HSINST returned null, retrying.*"
+      Reason: "Hsinstance returned null and retrying"
+    14:
+      token: ".*SO FAR SO GOOD ALL IS WELL SENDING L3 NET EVENT.*"
+      Reason: "Sending L3 Net Event"
+    15:
+      token: ".*Reboot Reason :  snmp-reboot.*"
+      Reason: "Reboot triggered via SNMP"
+    16:
+      token: ".*Reboot Reason :  software-upgrade-cm-boot-success.*"
+      Reason: "Reboot due to software upgrade"
+    17:
+      token: ".*Reboot Reason :  erouter-mode-change-triggered-reboot.*"
+      Reason: "Reboot due to erouter mode change"
+    18:
+      token: ".*Current IP address is NULL.*"
+      Reason: "IP Address is NULL"
+    19:
+      token: ".*Please wait, vendor nvram is being cleaned up.*"
+      Reason: "NVRAM cleanup"
+    20:
+      token: ".*Uptime is less than 10 mins, exiting from pmon..*"
+      Reason: "Exiting from pmon"
+    21:
+      token: ".*[utopia] Running process monitor.*"
+      Reason: "process monitor running"
+    22:
+      token: ".*pmon-register: invalid parameter .*"
+      Reason: "Invalid parameter in pmon register"
+    23:
+      token: ".*pmon-setproc: invalid parameter.*"
+      Reason: "Invalid parameter in pmon setproc"
+    24:
+      token: ".*pmon-unsetproc: invalid parameter.*"
+      Reason: "Invalid parameter in pmon unsetproc"
+    25:
+      token: ".*starting backhaul_setup.*"
+      Reason: "Backhaul setup started"
+    26:
+      token: ".*stopping backhaull_setup.*"
+      Reason: "Backhaul setup stopped"
+    27:
+      token: ".*[utopia][dhcp client script] duplicate address detected.*on.*"
+      Reason: "Duplicate address detected"
+    28:
+      token: ".*[utopia][dhcp client script] ignoring duplicate ... hoping for the best.*"
+      Reason: "Ignoring Duplicate address"
+    29:
+      token: ".*Triggering RDKB_FIREWALL_STOP.*"
+      Reason: "Firewall stop"
+    30:
+      token: ".*current wan ipaddr change..*:.*"
+      Reason: "WAN IP Address change"
+    31:
+      token: ".*Private lan ip detected on wan interface. switching to byoi bridge mode.*"
+      Reason: "Private LAN IP detected on WAN Interface"
+    32:
+      token: ".*Restarting wan.*"
+      Reason: "WAN Restart"
+    33:
+      token: ".*SERVICE_DHCP6C : SERVICE START.*"
+      Reason: "DHCP6 client service started"
+    34:
+      token: ".*SERVICE_DHCP6C : Non IPv6 Mode, service_stop.*"
+      Reason: "DHCP6 client service stopped due to non IPV6 mode"
+    35:
+      token: ".*SERVICE_DHCP6C : WAN Interface not configured, service_stop.*"
+      Reason: "DHCP6 client service stopped due to wan interface not configured"
+    36:
+      token: ".*SERVICE_DHCP6C : BridgeMode, service_stop.*"
+      Reason: "DHCP6 client service stopped in Bridge mode"
+    37:
+      token: ".*SERVICE_DHCP6C : WAN state stopped, service_stop.*"
+      Reason: "DHCP6 client service stopped due to WAN state stopped "
+    38:
+      token: ".*SERVICE_DHCP6C : SERVICE STOP.*"
+      Reason: "DHCP6 service stopped"
+    39:
+      token: ".*DHCPv6 Client is enabled but events are not registered, registering it now.*"
+      Reason: "DHCPv6 clients enabled but events are registering now"
+    40:
+      token: ".*DHCPv6 Client is enabled and events are registered.*"
+      Reason: "DHCPv6 clients enabled and events registered"
+    41:
+      token: ".*SERVICE_DHCP6C : DHCPv6 Client is not enabled.*"
+      Reason: "DHCPv6 client not enabled"
+    42:
+      token: ".*fhcd stopped.*"
+      Reason: "FHCD stopped"
+    43:
+      token: ".*service_forwarding : Triggering RDKB_FIREWALL_RESTART before bridge starting.*"
+      Reason: "Firewall restart before bridge start"
+    44:
+      token: ".*service_forwarding : Triggering RDKB_FIREWALL_RESTART before lan_wan starting.*"
+      Reason: "Firewall restart before lan_wan start"
+    45:
+      token: ".*IPv4 address is set for brlan0 MOCA interface is UP.*"
+      Reason: "IP Address set to brlan0"
+    46:
+      token: ".*In bridge mode:start brlan1 initialization.*"
+      Reason: "brlan1 initialization started in bridge mode"
+    47:
+      token: ".*service_ipv4 : Triggering RDKB_FIREWALL_RESTART.*"
+      Reason: "Firewall restart triggered"
+    48:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : In resync_instance to bring up an instance.*"
+      Reason: "Boot Up - resyncing to bring up the instances"
+    49:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : NV_ETHLOWER returned null, retrying.*"
+      Reason: "Boot Up - NV_ETHLOWER returned null, retrying"
+    50:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : NV_IP returned null, retrying.*"
+      Reason: "Boot Up - NV_IP returned null, retrying"
+    51:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : NV_SUBNET returned null, retrying.*"
+      Reason: "Boot Up - NV_SUBNET returned null, retrying"
+    52:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : NV_ENABLED returned null, retrying.*"
+      Reason: "Boot Up - NV_ENABLED returned null, retrying"
+    53:
+      token: ".*RDKB_SYSTEM_BOOT_UP_LOG : NV_LOWER returned null, retrying.*"
+      Reason: "Boot Up - NV_LOWER returned null, retrying"
+    54:
+      token: ".*Maximum loop reached, exiting script.*"
+      Reason: "Firewall restart - ipv6 notification not started"
+    55:
+      token: ".*Multicast Service is running.*"
+      Reason: "Multicast service running"
+    56:
+      token: ".*Multicast Service is not running.*"
+      Reason: "Multicast service not running"
+    57:
+      token: ".*handle_gre: WiFi is Ready .."
+      Reason: "GRE: WiFi is Ready"
+    58:
+      token: ".*handle_gre: Waiting for WiFi.*"
+      Reason: "GRE: Waiting for WiFi"
+    59:
+      token: ".*GRE CREATE: hotspot_enable_status is.*exiting.*"
+      Reason: "GRE Hotspot enable Failed"
+    60:
+      token: ".*GRE INITIALIZING…"
+      Reason: "Initializing GRE"
+    61:
+      token: ".*Creating tunnel.*...remote:.*"
+      Reason: "GRE Tunnel created"
+    62:
+      token: ".*hotspot-stop: hotspot_enable_status is.*exiting.*"
+      Reason: "GRE Hotspot disable failed"
+    63:
+      token: ".*Destroying tunnel.*"
+      Reason: "GRE Tunnel deleted"
+    64:
+      token: ".*ifconfig: brlan0: error fetching interface information: Device not found"
+      Reason: "brlan0 interface not found"

@@ -1,0 +1,302 @@
+---
+loginsight:
+  1:
+    token: ".*Wifi Agent loaded successfully..."
+    Reason: "Wifi Agent loaded successfully"
+  2:
+    token: ".*!!! Wifi Message Bus Init ERROR !!!"
+    Reason: "Wifi Message Bus Init ERROR"
+  3:
+    token: ".*RDKB_SYSTEM_BOOT_UP_LOG : CosaWifiInitialize - WiFi initialize"
+    Reason: "WiFi initialization Started"
+  4:
+    token: ".*RDKB_SYSTEM_BOOT_UP_LOG : CosaWifiInitialize - WiFi failed to initialize. Is WiFi supposed to start?"
+    Reason: "WiFi initialization Failed"
+  5:
+    token: ".*RDKB_SYSTEM_BOOT_UP_LOG : CosaWifiInitialize - WiFi initialization complete."
+    Reason: "WiFi initialization completed"
+  6:
+    token: ".*lvl=ERROR[a-zA-z]+.*fail.*"
+    Reason: "WIFI error"
+  7:
+    token: ".*lvl=ERROR.*CcspCcMbi_GetParameterValues -- No parameter value returned"
+    Reason: "CCSP GetParameterValues error"
+  8:
+    token: ".*Notify fhcd of Wi-Fi config change.*"
+    Reason: "WIFI Config change notification to extender"
+  9:
+    token: ".*Beacon Rate CosaWifiAdjustBeaconRate changed for 2.4G"
+    Reason: "2G Beacon Rate changed"
+  10:
+    token: ".*Beacon Rate CosaWifiAdjustBeaconRate changed for 5G"
+    Reason: "5G Beacon Rate changed"
+  11:
+    token: ".*RDKB_WIFI_CONFIG_CHANGED : Wifi security mode WPA2-Personal is Enabled"
+    Reason: "Security mode - WPA2-Personal"
+  12:
+    token: ".*RDKB_WIFI_CONFIG_CHANGED : Wifi security mode WPA-WPA2-Personal is Enabled"
+    Reason: "Security mode - WPA-WPA2-Personal"
+  13:
+    token: ".*RDKB_WIFI_CONFIG_CHANGED : Wifi security mode WPA2_Enterprise is Enabled"
+    Reason: "Security mode - WPA2_Enterprise"
+  14:
+    token: ".*RDKB_WIFI_CONFIG_CHANGED : Wifi security mode WPA3-Personal is Enabled"
+    Reason: "Security mode - WPA3-Personal"
+  15:
+    token: ".*RDKB_WIFI_CONFIG_CHANGED : Wifi security mode WPA2-WPA3-Personal is Enabled"
+    Reason: "Security mode - WPA2-WPA3-Personal"
+  16:
+    token: ".*RDKB_WIFI_CONFIG_CHANGED : Wifi security mode None is Enabled"
+    Reason: "Security mode - None"
+  17:
+    token: ".*is created Start Radio Broadcasting"
+    Reason: "Start Radio Broadcasting"
+  18:
+    token: ".*:.*is not created not starting Radio Broadcasting"
+    Reason: "Radio Broadcasting not started"
+  19:
+    token: ".*:.*Bringing up mesh interface after factory reset"
+    Reason: "Bringing up mesh interface after factory reset"
+  20:
+    token: ".*CosaDmlWiFiResetRadiosThread.*Calling wifi_reset"
+    Reason: "WIFI Reset"
+  21:
+    token: ".*WIFI CosaDmlWiFiResetRadiosThread.*: Notify Mesh of reload wifi"
+    Reason: "Notify Mesh to reload wifi"
+  22:
+    token: ".*CosaDmlWiFi_ResetRadios:.*Reset WiFi in background.  Process will take upto 90 seconds to complete"
+    Reason: "Wifi resetted in background"
+  23:
+    token: ".*CosaDmlWiFi_ResetRadios:.*Exiting with ANSC_STATUS_FAILURE"
+    Reason: "Resetting Wifi Radio failed"
+  24:
+    token: ".*CosaDmlWiFiCheckWmmParams:.*Resetting Wmm parameters"
+    Reason: "Resetting Wmm parameters"
+  25:
+    token: ".*CosaDmlWiFiInit Unable to remove syscfg.db during factory reset"
+    Reason: "Unable to remove syscfg.db during factory reset"
+  26:
+    token: ".*CosaDmlWiFiInit Removed syscfg.db for factory reset"
+    Reason: "Removed syscfg.db for factory reset"
+  27:
+    token: ".*CosaDmlWiFiInit:.* radioActive wifi0 = TRUE"
+    Reason: "WIFI0 Radio Active"
+  28:
+    token: ".*CosaDmlWiFiInit:.* radioActive wifi0 = FALSE"
+    Reason: "WIFI0 Radio not Active"
+  29:
+    token: ".*CosaDmlWiFiInit:.* radioActive wifi1 = TRUE"
+    Reason: "WIFI1 Radio Active"
+  30:
+    token: ".*CosaDmlWiFiInit:.* radioActive wifi1 = FALSE"
+    Reason: "WIFI1 Radio not Active"
+  31:
+    token: ".*CosaDmlWiFi_FactoryReset:.*Deleting Brcm /data/nvram* and rebooting"
+    Reason: "Deleting Brcm /data/nvram* and rebooting"
+  32:
+    token: ".*CosaDmlWiFi_FactoryReset:.*Factory Reset WiFi"
+    Reason: "Factory Reset Wifi"
+  33:
+    token: ".*Got invalid Radio Power.*, not updating the power"
+    Reason: "Invalid Radio Power"
+  34:
+    token: ".*WIFI.*: Max SSID count"
+    Reason: "Max SSID count reached for WIFI"
+  35:
+    token: ".*CosaDmlWiFiApPushMacFilter.*pMfQueue is NULL "
+    Reason: "pMfQueue is NULL"
+  36:
+    token: ".*WIFI.*: Max AP count reached"
+    Reason: "Max AP count reached for WIFI"
+  37:
+    token: ".*CosaDmlWiFi_FactoryReset:.*Factory Reset WiFi"
+    Reason: "WIFI Factory reset"
+  38:
+    token: ".*CosaDmlSetApRadiusSettings.*fail to  setApSecurityRadiusSettings"
+    Reason: "Fail to  setApSecurityRadiusSettings"
+  39:
+    token: ".*Externder MAC :.*is Failed to remove from ACL list"
+    Reason: "Failed to remove Extender MAC from ACL List"
+  40:
+    token: ".*WIFI.*: Externder MAC :.*is removed from ACL list"
+    Reason: "Extender MAC successfully removed from ACL List"
+  41:
+    token: ".*WIFI.*: Externder MAC :.*is Failed to add ACL list"
+    Reason: "Failed to add Extender MAC to ACL List"
+  42:
+    token: ".*WIFI.*: Externder MAC :.*is added to ACL list"
+    Reason: "Extender MAC successfully added to ACL List"
+  43:
+    token: ".*CosaDmlMacFilt_AddEntry : PSM error adding MacFilterList  mac.*"
+    Reason: "PSM error adding MacFilterList  mac"
+  44:
+    token: ".*ERROR.*CosaDmlMacFilt_SetConf :adding mac ACL rule =.*"
+    Reason: "Error in adding MAC ACL rule"
+  45:
+    token: ".*ERROR.*CosaDmlMacFilt_SetConf :adding mac BSD rule =.*"
+    Reason: "Error in adding MAC BSD rule"
+  46:
+    token: ".*WIFI.*:error : Radion is not enable"
+    Reason: "WIFI Radion - Disabled"
+  47:
+    token: ".*wifi_getRadioCarrierSenseThresholdRange returned fail response"
+    Reason: "Get Failed for RadioCarrierSenseThresholdRange "
+  48:
+    token: ".*wifi_getRadioCarrierSenseThresholdInUse returned fail response"
+    Reason: "Get Failed for RadioCarrierSenseThresholdInUse"
+  49:
+    token: ".*wifi_setRadioCarrierSenseThresholdInUse returned fail response"
+    Reason: "Set Failed for RadioCarrierSenseThresholdInUse"
+  50:
+    token: ".*wifi_getRadioBeaconPeriod returned fail response"
+    Reason: "Get Failed for RadioBeaconPeriod "
+  51:
+    token: ".*wifi_setRadioBeaconPeriod returned fail response"
+    Reason: "Set Failed for RadioBeaconPeriod"
+  52:
+    token: ".*WIFI.*2.4GHz NeighborScan data is corrupted - dropping"
+    Reason: "2.4GHz NeighborScan data corrupted"
+  53:
+    token: ".*WIFI.*5GHz NeighborScan data is corrupted - dropping"
+    Reason: "5GHz NeighborScan data corrupted"
+  54:
+    token: ".*WIFI-CLIENT.*: ERROR opening socket "
+    Reason: "Error opening WIFI-CLIENT socket"
+  55:
+    token: ".*WIFI-CLIENT.*: inet_pton error occurred"
+    Reason: "Inet-pton error occurred"
+  56:
+    token: ".*WIFI-CLIENT.*: Error in connecting socket"
+    Reason: "Error in connecting WIFI-CLIENT socket"
+  57:
+    token: ".*WIFI-CLIENT.*: init_client_socket error"
+    Reason: "Erron in connecting WIFI-CLIENT INIT socket"
+  58:
+    token: ".*WIFI-CLIENT.*: ERROR writing to socket"
+    Reason: "Error in writing to WIFI-CLIENT socket"
+  59:
+    token: ".*DCS_ERROR_2:160"
+    Reason: "DCS Error - 160"
+  60:
+    token: ".*DCS_ERROR_2:80+80"
+    Reason: "DCS Error - 80+80"
+  61:
+    token: ".*DCS_ERROR:Fail to enable DCS when Mesh is on"
+    Reason: "Failed to enable DCS when Mesh is on"
+  62:
+    token: ".*BAND_STEERING_ERROR:Fail to enable Band Steering when Mesh is on"
+    Reason: "Failed to enabe Band Steering when Mesh is on"
+  63:
+    token: ".*Failed to get AutoACLEnable for dm:.*"
+    Reason: "Failed to get AutoACLEnable for dm"
+  64:
+    token: ".*CosaDmlWiFi_AssociatedDevice_callback-.*Hotspot is Not Configured"
+    Reason: "Hotspot not configured"
+  65:
+    token: ".*CosaDmlWiFi_AssociatedDevice_callback-.*Automatic ACL not enabled"
+    Reason: "Automatic ACL not enabled"
+  66:
+    token: ".*CosaDmlWiFi_DisassociatedDevice_callback.*STA Mac already present in hotspot ACL"
+    Reason: "STAM MAC already present in hotspot ACL"
+  67:
+    token: ".*Adding ACL for hotspot idx=.*"
+    Reason: "Adding ACL for hotspot"
+  68:
+    token: ".*: Failed to create entry.*for adding MAC Address:.*"
+    Reason: "Adding MAC address in MAC filter table failed"
+  69:
+    token: ".*: Failed to GetInstance for dm:.*for adding MAC Address:.*"
+    Reason: "Failed to get dm instance for adding MAC Address"
+  70:
+    token: ".*: Failed to set Commit for adding MAC Address:.*"
+    Reason: "MacFiltTable Commit Failure"
+  71:
+    token: ".*: Added Client with MAC address:.*to ACL.*"
+    Reason: "Added client MAC address to ACL"
+  72:
+    token: ".*IsSsidHotspot: fail to get PSM record !"
+    Reason: "PSM record failure - IsSsidHotspot function"
+  73:
+    token: ".*WiFi_GetParamStringValue: no memory"
+    Reason: "Memory Allocation Failure"
+  74:
+    token: ".*WiFi_GetParamStringValue: base64 encoding error"
+    Reason: "base64 encoding error for GetParam"
+  75:
+    token: ".*WiFi_SetParamStringValue: base64 encoding error"
+    Reason: "base64 encoding error for SetParam"
+  76:
+    token: ".*Radio_SetParamStringValue! wifi standard not supported.*"
+    Reason: "wifi standard not supported"
+  77:
+    token: ".*SSID_DelEntry: null object passed !"
+    Reason: "NULL object passed in SSID deletion"
+  78:
+    token: ".*SSID_DelEntry: null pWifiSsid passed !"
+    Reason: "NULL WIFI SSID object passed in SSID deletion"
+  79:
+    token: ".*CosaDmlWiFiSetSSIDPsmData.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiSetSSIDPsmData"
+  80:
+    token: ".*CosaDmlWiFiSetAccessPointPsmData.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiSetAccessPointPsmData"
+  81:
+    token: ".*WIFI CosaDmlWiFiRadioGetChannelsInUse.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiRadioGetChannelsInUse"
+  82:
+    token: ".*WIFI CosaDmlWiFiRadioGetApChannelScan.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiRadioGetApChannelScan"
+  83:
+    token: ".*WIFI CosaDmlWiFiSsidSetCfg.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiSsidSetCfg"
+  84:
+    token: ".*WIFI CosaDmlWiFiSsidApplyCfg.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiSsidApplyCfg"
+  85:
+    token: ".*WIFI CosaDmlWiFiSsidGetCfg.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiSsidGetCfg"
+  86:
+    token: ".*WIFI CosaDmlWiFiSsidGetDinfo.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiSsidGetDinfo"
+  87:
+    token: ".*WIFI CosaDmlWiFiApPushCfg.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiApPushCfg"
+  88:
+    token: ".*WIFI CosaDmlWiFiApSetCfg.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiApSetCfg"
+  89:
+    token: ".*WIFI CosaDmlWiFiApApplyCfg.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiApApplyCfg"
+  90:
+    token: ".*WIFI CosaDmlWiFiApGetCfg.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiApGetCfg"
+  91:
+    token: ".*WIFI CosaDmlWiFiApAssociatedDevicesHighWatermarkGetVal.*pCfg is NULL"
+    Reason: "pCfg is NULL in CosaDmlWiFiApAssociatedDevicesHighWatermarkGetVal"
+  92:
+    token: ".*WIFI CosaDmlWiFiSsidAddEntry.*pEntry is NULL"
+    Reason: "pEntry is NULL in CosaDmlWiFiSsidAddEntry"
+  93:
+    token: ".*WIFI CosaDmlWiFiApAddEntry.*pEntry is NULL"
+    Reason: "pEntry is NULL in CosaDmlWiFiApAddEntry"
+  94:
+    token: ".*WIFI CosaDmlWiFiApSecGetEntry.*pEntry is NULL"
+    Reason: "pEntry is NULL in CosaDmlWiFiApSecGetEntry"
+  95:
+    token: ".*WIFI CosaDmlWiFiApSecGetCfg.*pEntry is NULL"
+    Reason: "pEntry is NULL in CosaDmlWiFiApSecGetCfg"
+  96:
+    token: ".*WIFI CosaDmlGetWMM_APParams.*pRadiusSetting is NULL"
+    Reason: "pRadiusSetting is NULL in CosaDmlGetWMM_APParams"
+  97:
+    token: ".*WIFI CosaDmlGetWMM_TXParams.*pRadiusSetting is NULL"
+    Reason: "pRadiusSetting is NULL in CosaDmlGetWMM_TXParams"
+  98:
+    token: ".*WIFI CosaDmlGetWMM_STAParams.*pRadiusSetting is NULL"
+    Reason: "pRadiusSetting is NULL in CosaDmlGetWMM_STAParams"
+  99:
+    token: ".*WIFI CosaDmlGetApRadiusSettings.*pRadiusSetting is NULL"
+    Reason: "pRadiusSetting is NULL in CosaDmlGetApRadiusSettings"
+  100:
+    token: ".*WIFI CosaDmlSetApRadiusSettings.*pRadiusSetting is NULL"
+    Reason: "pRadiusSetting is NULL in CosaDmlSetApRadiusSettings"

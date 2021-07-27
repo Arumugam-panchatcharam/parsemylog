@@ -1,0 +1,87 @@
+---
+logfiles:
+  armconsole:
+    filename: ["ArmConsolelog.txt.0", "ArmConsolelog.txt.1"]
+    regex: "unformatted"
+
+  boottime:
+    filename: ["BootTime.log"]
+    regex: '(?P<timestamp>[\d:\d:\d]*)\s+\[(?P<module>\w+)\]\s+(?P<log>[\w\W]*)'
+
+  cmlog:
+    filename: ["CMlog.txt.0", "CMlog.txt.1"]
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  crlog:
+    filename: ["CRlog.txt.0", "CRlog.txt.1"]
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  dibblerlog:
+    filename: ["dibbler-client.log", "dibbler-server.log"]
+    regex: '(?P<timestamp>[\d\.\d\. \d:\d:\d]*)\s+(?P<module>[\w]*)\s+(?P<log_level>[\w]*)\s+(?P<log>[\w\W]*)'
+
+  gwprovlog:
+    filename: ["GWPROVLog.txt.0", "GWPROVLog.txt.1"]
+    # 201227-07:08:37.419816 [mod=GWPROV, lvl=INFO] [tid=3551]  Entry GWP_act_DocsisLinkUp_callback
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  hotspot:
+    filename: ["Hotspotlog.txt.0", "Hotspotlog.txt.1"]
+    # 210712-14:22:46.392311 [mod=HOTSPOT, lvl=WARN] [tid=19022] Search for empty object in 'dslhCpeCheckEmptyObject'
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  lmlog:
+    filename: ["LM.txt.0", "LM.txt.1"]
+    # 201228-04:23:28.268191 [mod=LM, lvl=WARN] [tid=5994] ValidateHost_Thread DEL from List if present mac = 88:E9:FE:6A:EF:B5
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  meshagent:
+    filename: ["MeshAgentLog.txt.0", "MeshAgentLog.txt.1"]
+    # 210708-06:23:44.882958 [mod=MESH, lvl=INFO] [tid=13400] [MeshAgent] msgBusInit called with com.cisco.spvtg.ccsp.meshagent
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  mocalog:
+    filename: ["MOCAlog.txt.0", "MOCAlog.txt.1"]
+    # 201227-07:08:13.521495 [mod=MOCA, lvl=WARN] [tid=19282] CosaDmlMocaIfGetCfg -- ulInterfaceIndex:0.
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  mtalog:
+    filename: ["MTAlog.txt.0", "MTAlog.txt.1"]
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  notify:
+    filename: ["NOTIFYLog.txt.0", "NOTIFYLog.txt.1"]
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  pamlog:
+    filename: ["PAMlog.txt.0", "PAMlog.txt.1"]
+    # 201227-07:08:14.909334 [mod=PAM, lvl=WARN] [tid=7283] After committing:Device.X_CISCO_COM_Security.Firewall.:0
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  psmlog:
+    filename: ["PSMlog.txt.0", "PSMlog.txt.1"]
+    # 201227-07:08:41.816458 [mod=PSM, lvl=WARN] [tid=6952] ++++ getParameterValues Failed for dmsb.l2net.2.Vid , returnStatus -16 +++
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  rebootreason:
+    filename: ["RebootReasonlog"]
+    # [Fri Jun 25 03:11:58 UTC 2021] Reboot Reason : unknown
+    regex: '\[(?P<timestamp>[\d\w\s\W]+)\]\s+Reboot Reason\s+:\s+(?P<RebootReason>[\w\W]+)'
+
+  snmplog:
+    filename: ["SNMP.txt.0", "SNMP.txt.1"]
+    # 201227-07:08:13.951486 [mod=SNMP, lvl=INFO] [tid=5359] RDKB_SNMP : SNMP GET SUCCESS for param 'Device.MoCA.Interface.1.Enable'
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<snmp_type>[\w]+)\s+:\s+(?P<snmp_req_type>[\w\s\w]+)for param\s+(?P<snmp_param>[\w\W]+)'
+
+  tdmlog:
+    filename: ["TDMlog.txt.0", "TDMlog.txt.1"]
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  tr69log:
+    filename: ["TR69log.txt.0", "TR69log.txt.1"]
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  wifilog:
+    filename: ["WiFiLog.txt.0", "WiFiLog.txt.1"]
+    # 201227-01:32:03.676193 [mod=WIFI,lvl=WARN] [tid=28541] CosaDMLWiFi_Send_FullHostDetails_To_LMLite-17965
+    regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'

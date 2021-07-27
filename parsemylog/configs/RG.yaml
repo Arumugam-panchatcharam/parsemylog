@@ -1,0 +1,21 @@
+---
+loginsight:
+  bootloader info:
+    SOC: '.*SOC: (?P<SOC>[\w\d-]+)'
+    SOC ID: '.*SOC-ID:\s+(?P<SOCID>0x[\w]+)'
+    BL product Name: '.*DevProfile:.*\[(?P<BL_ProductName>[\w]+)\]'
+    Linux Product Name: '.*Machine model: (?P<Linux_ProductName>[\w]+)'
+    Stage 1 version: '.*Technicolor Stage1 v(?P<S1_version>[\d.]+).*'
+    Stage 2 version: '.*Technicolor Stage2 v(?P<S2_version>[\d.]+).*'
+    Boot Device: '.*BootDevice: (?P<Boot_Device>\w+)*'
+    OTP Words: '.*OTP Words: 1:(?P<OTP1>\d\w+)\s2:(?P<OTP2>\d\w+)\s+3:(?P<OTP3>\d\w+).*'
+    BOOT order: '.*Banker: Boot order: (?P<BootOrder>[\w\d]+\s[\w\d]+\s[\w\d]+).*'
+    Current Bank: '.*Banker: Boot (?P<BootBank>[\w]+-\d).*'
+
+  Flash info:
+    Flash device 1: ".*CS0: (?P<FlashDevice_1>.*)"
+    Flash Device 2: ".*CS1: (?P<FlashDevice_2>.*)"
+    Flash info: '.*Flash Size:(?P<FlashSize>[\d\w]+)\s+,Block Size:(?P<BlockSize>[\d\w]+)\s+,Page Size:(?P<PageSize>[\d\w]+)'
+
+markers:
+  Reboot: \[[AMBS]+\d?[\'\"]?\]
