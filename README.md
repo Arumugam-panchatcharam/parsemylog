@@ -5,7 +5,7 @@ A Simple GUI App to read RDK log files and display the insights to the developer
 [[_TOC_]]
 
 <p>
-<details>
+
 <summary><h2>User Guide</h2></summary>
   The envisioned Log parser is still in beta stage.
 
@@ -19,11 +19,11 @@ A Simple GUI App to read RDK log files and display the insights to the developer
    4. Start using the parsemylog by executing `parsemylog` in any terminal. Currently it is tested in `Windows` only.
 
 <p>
-<details>
+
 <summary><h4>GUI Overview</h4></summary>
 
 <p>
-<details>
+
 <summary><h5>ToolBar</h5></summary>
 
 ```
@@ -37,11 +37,11 @@ A Simple GUI App to read RDK log files and display the insights to the developer
 
 <img src="docs/toolbar.png" alt="Toolbar" width="400" height="200"> 
 
-</details>
+
 </p>
 
 <p>
-<details>
+
 <summary><h5>Left Section - Log Filter/Folder Browse</h5></summary>
 
 ```
@@ -50,11 +50,11 @@ File(s)/Folder collabsible section gives the TREE view os he selected file(s)/Fo
 ```
 <img src="docs/left_section.png" alt="Toolbar" width="1200" height="700"> 
 
-</details>
+
 </p>
 
 <p>
-<details>
+
 <summary><h5>NotePad TAB</h5></summary>
 
 ```
@@ -62,11 +62,11 @@ This is just like a notepad, used to view the RAW logs selected in the left file
 ```
 <img src="docs/notepad.png" alt="Notepad" width="1500" height="700"> 
 
-</details>
+
 </p>
 
 <p>
-<details>
+
 <summary><h5>Report And Analysis TAB</h5></summary>
 
 ```
@@ -78,11 +78,11 @@ is in YAML format. Did you know official <a href="http://yaml.org/">YAML website
 
 <img src="docs/parsed_log_analysis.png" alt="Report And Analysis" width="1500" height="700"> 
 
-</details>
+
 </p>
 
 <p>
-<details>
+
 <summary><h5>Statistics TAB</h5></summary>
 
 ```
@@ -92,11 +92,11 @@ This plots the parsed logs based on the ERROR level distribution
 
 <img src="docs/statistics.png" alt="Log Statistics" width="1500" height="700"> 
 
-</details>
+
 </p>
 
 <p>
-<details>
+
 <summary><h5>Log Insight TAB</h5></summary>
 
 ```
@@ -105,11 +105,11 @@ The log insight is fed with differet YAML format to extract key information from
 ```
 <img src="docs/log_insight.png" alt="Log Insight" width="1500" height="700"> 
 
-</details>
+
 </p>
 
 <p>
-<details>
+
 <summary><h5>Summary TAB</h5></summary>
 
 ```
@@ -117,19 +117,19 @@ The summary tab list out all the key informations of log insight
 ```
 <img src="docs/summary.png" alt="Log Summary" width="1500" height="700"> 
 
-</details>
+
 </p>
 
 
-</details>
+
 </p>
 
-</details>
+
 </p>
 
 
 <p>
-<details>
+
 <summary markdown="span"><h2>Developer Guide</h2></summary>
 
   ParseMyLog is based on [PysimpleGUI](https://pypi.org/project/PySimpleGUI/) GUI Framework. To start with check their vast [Demo Programs](https://github.com/PySimpleGUI/PySimpleGUI/tree/master/DemoPrograms) and [Documentations](https://pysimplegui.readthedocs.io/en/latest/).
@@ -235,6 +235,6 @@ This wil create source distribution package under `dist` folder with version as 
     17. MeshAgentLog  
     18. Hotspot  
     19. lighttpderror log  
-</details>
+
 </p>
 

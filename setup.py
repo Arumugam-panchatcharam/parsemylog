@@ -28,7 +28,7 @@ setup(
     license='Commercial',
     description="A Simple GUI App to read RDK log files and display the insights to the developer.",
     author='Arumugam Panchatcharam',
-    author_email='arumugam.panchatcharam@technicolor.com',
+    author_email='arumugamece2013@gmail.com',
     entry_points={
         'console_scripts': [
             'parsemylog = parsemylog.parsemylog:main'
