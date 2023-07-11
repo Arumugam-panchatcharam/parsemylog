@@ -85,3 +85,8 @@ logfiles:
     filename: ["WiFiLog.txt.0", "WiFiLog.txt.1"]
     # 201227-01:32:03.676193 [mod=WIFI,lvl=WARN] [tid=28541] CosaDMLWiFi_Send_FullHostDetails_To_LMLite-17965
     regex: '(?P<timestamp>[\d\-\d:\d:\d.\d]*)\s+\[mod=(?P<module>\w+),\s+lvl=(?P<log_level>\w+)\]\s+\[tid=\d+\]\s+(?P<log>[\w\W]*)'
+
+  wifi_openwrt:
+    filename: ["messages.log.0"]
+    # Sat Jul 24 00:06:07 2021 daemon.err interceptd[6183]: RTNETLINK answers: No such file or directory
+    regex: '(?P<timestamp>[\w+\s\w+\s\d+\s\d+:\d+:\d+\s\d+]*)\s+(?P<module>[\w]+).(?P<log_level>[\w]+)\s+(?P<log>[\w\W]*)'
